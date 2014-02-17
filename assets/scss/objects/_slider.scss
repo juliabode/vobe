@@ -1,0 +1,31 @@
+.responsive-slider.flexslider {
+    .flex-control-nav {
+        display: none;
+    }
+
+    .slide-title {
+        a {
+            top: initial;
+            left: 0;
+            bottom: 2em;
+            right: initial;
+            border-left: 3px solid $red;
+            font-size: $font-size-large;
+            background: rgba(0,0,0,.5);
+            font-family: $font-secondary;
+            font-weight: normal;
+
+            @media all and (max-width: $bp-med) {
+                position: initial;
+                background: none;
+                border: none;
+                display: block;
+                height: 3.5em;
+            }
+        }
+
+        @media all and (max-width: $bp-med) {
+            background: $black;
+        }
+    }
+}
