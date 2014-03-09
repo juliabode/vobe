@@ -11,7 +11,7 @@ Template Name: Homepage
     <?php get_template_part('templates/content', 'page'); ?>
 
     <div class="row">
-        <div class="small-9 medium-9 small-12">
+        <div class="small-9 medium-9 small-12 left">
             <?php
                 for ( $i = 1; $i <= 4; $i++ ) {
                     $tabHeader  = get_field('home-box_' . $i . '_title');
@@ -32,5 +32,9 @@ Template Name: Homepage
             ?>
 
         </div>
+
+        <aside class="sidebar column small-3 medium-3 small-12" role="complementary">
+            <?php dynamic_sidebar('sidebar-homepage'); ?>
+        </aside><!-- /.sidebar -->
     </div>
 </div>
