@@ -1,9 +1,10 @@
+html, body {
+    font: 100%/1.5 $font;
+}
+
 body {
     margin: 0;
-    font-family: $font;
     background: url("../img/bg.png");
-    line-height: 1.5rem;
-    font-size: 100%;
 
     @media all and (min-width: $bp-med) {
         padding-top: $space-triple;

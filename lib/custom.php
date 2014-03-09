@@ -38,3 +38,11 @@ function add_admin_area_favicon() {
 }
  
 add_action('admin_head', 'add_admin_area_favicon');
+
+/**
+ * Add new image size for homepage service tiles
+ */
+
+if ( function_exists( 'add_image_size' ) ) {
+    add_image_size( 'service-tile-thumb', 250, 9999 ); //300 pixels wide (and unlimited height)
+}
