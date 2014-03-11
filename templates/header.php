@@ -10,13 +10,7 @@
     <div class="small-12 medium-8 large-7 columns pos--init">
 
         <nav class="social-nav">
-            <ul id="social-media-links">
-                <li class="facebook-icon"><a href="#">Facebook</a></li>
-                <li class="twitter-icon"><a href="#">Twitter</a></li>
-                <li class="google-icon"><a href="#">Google</a></li>
-                <li class="xing-icon"><a href="#">Xing</a></li>
-                <li class="linkedin-icon"><a href="#">LinkedIn</a></li>
-            </ul>
+            <?php get_template_part('templates/social_media_icons'); ?>
         </nav>
         <nav class="nav-main left-off-canvas-menu" role="navigation">
             <?php
