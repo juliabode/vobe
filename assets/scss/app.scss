@@ -20,19 +20,21 @@
 //@import "base/tables";
 
 //@import "base/figure";
+@import "objects/animate";
 
 
 /*------------------------------------*\
     $LAYOUT
 \*------------------------------------*/
 @import "base/grid";
+@import "base/block-grid";
 
 
 /*------------------------------------*\
     $PAGE STRUCTURE
 \*------------------------------------*/
 @import "objects/header";
-//@import "objects/nav";
+@import "objects/nav";
 //@import "objects/main";
 @import "objects/sidebar";
 @import "objects/footer";
@@ -56,6 +58,16 @@
 @import "objects/slider";
 @import "objects/service-tiles.scss";
 @import "objects/social-media.scss";
+@import "objects/accordion-component.scss";
+
+
+/*------------------------------------*\
+    $PAGE Templates
+\*------------------------------------*/
+
+@import "pages/member-page-1.scss";
+@import "pages/member-page-2.scss";
+@import "pages/member-page-3.scss";
 
 a { text-decoration: none; }
 
