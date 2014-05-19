@@ -15,8 +15,14 @@ function my_login_logo() { ?>
 			background-size: 100%;
         }
     </style>
-<?php }
+
+    <?php echo my_favicon_url();
+}
 add_action( 'login_enqueue_scripts', 'my_login_logo' );
+
+function my_favicon_url() {
+    return '<link rel="shortcut icon" href="' . get_template_directory_uri() . '/assets/img/favicon.png' . '" />';
+}
 
 function my_login_logo_url() {
     return get_bloginfo( 'url' );
@@ -33,10 +39,8 @@ add_filter( 'login_headertitle', 'my_login_logo_url_title' );
 */
 
 function add_admin_area_favicon() {
-    $favicon_url = get_template_directory_uri() . '/assets/img/favicon.png';
-    echo '<link rel="shortcut icon" href="' . $favicon_url . '" />';
+    echo my_favicon_url();
 }
- 
 add_action('admin_head', 'add_admin_area_favicon');
 
 /**
