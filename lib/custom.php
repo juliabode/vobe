@@ -44,5 +44,6 @@ add_action('admin_head', 'add_admin_area_favicon');
  */
 
 if ( function_exists( 'add_image_size' ) ) {
-    add_image_size( 'service-tile-thumb', 250, 9999 ); //300 pixels wide (and unlimited height)
+    add_image_size( 'service-tile-thumb', 250, 9999 ); //250 pixels wide (and unlimited height)
+    add_image_size( 'member-fotos', 450, 350, true );
 }

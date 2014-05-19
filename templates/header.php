@@ -9,7 +9,7 @@
 
     <div class="small-12 medium-8 large-7 columns pos--init">
 
-        <nav class="social-nav">
+        <nav class="social-nav hide-small">
             <?php get_template_part('templates/social_media_icons'); ?>
         </nav>
         <nav class="nav-main left-off-canvas-menu" role="navigation">

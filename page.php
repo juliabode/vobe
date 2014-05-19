@@ -1,2 +1,4 @@
-<?php get_template_part('templates/page', 'header'); ?>
-<?php get_template_part('templates/content', 'page'); ?>
+<div class="large-12 medium-12 small-12 column m-t-xxl m-b-xxl">
+    <?php get_template_part('templates/page', 'header'); ?>
+    <?php get_template_part('templates/content', 'page'); ?>
+</div>

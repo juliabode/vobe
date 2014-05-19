@@ -22,7 +22,7 @@ Template Name: Homepage
                         <h3><?php echo $tabHeader; ?></h3>
                         <div class="tile-box">
                             <?php if ( !is_null($tabImage['sizes']['service-tile-thumb']) ) : ?>
-                                <img class="right" src="<?php echo $tabImage['sizes']['service-tile-thumb']; ?>" alt="<?php echo $tabHeader; ?>">
+                                <img class="hide-small right" src="<?php echo $tabImage['sizes']['service-tile-thumb']; ?>" alt="<?php echo $tabHeader; ?>">
                             <?php endif ?>
                             <?php echo $tabContent; ?>
                         </div>
@@ -33,7 +33,7 @@ Template Name: Homepage
 
         </div>
 
-        <aside class="sidebar column small-3 medium-3 small-12" role="complementary">
+        <aside class="sidebar column small-3 medium-3 small-12 special-box" role="complementary">
             <?php dynamic_sidebar('sidebar-homepage'); ?>
         </aside><!-- /.sidebar -->
     </div>
