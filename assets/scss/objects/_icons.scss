@@ -23,7 +23,19 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-home:before   { content: "\e600"; }
+.icon-home > a:after {
+    font-family: 'icomoon';
+    content: "\e600";
+    display: none;
+
+    @media all and (min-width: $bp-med) {
+        line-height: 1px;
+        display: block;
+        text-indent: 0;
+        margin-top: -20px;
+        text-align: right;
+    }
+}
 .icon-pencil:before { content: "\e601"; }
 .icon-earth:before  { content: "\e602"; }
 .icon-fire:before   { content: "\e603"; }

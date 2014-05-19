@@ -75,17 +75,3 @@ a { text-decoration: none; }
   display: block;
 }
 
-.dropup, .dropdown {
-  position: relative;
-}
-
-.dropdown-menu {
-  /*position: absolute;*/
-  top: 100%;
-  left: 0;
-  z-index: 1000;
-  /*display: none;*/
-  float: left;
-  -moz-background-clip: padding;
-  background-clip: padding-box;
-}

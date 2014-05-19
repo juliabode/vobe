@@ -2,6 +2,10 @@
     -webkit-backface-visibility: hidden;
     width: 100%;
     overflow: hidden;
+
+    @media all and (min-width: $bp-med) {
+        padding-top: $space;
+    }
 }
 
 .inner-wrap {
@@ -45,6 +49,10 @@
     * {
         -webkit-backface-visibility: hidden;
         overflow: hidden;
+
+        @media all and (min-width: $bp-med) {
+            overflow: initial;
+        }
     }
 
     @media all and (min-width: $bp-med) {
@@ -56,6 +64,7 @@
         transform: none;
         background: rgba(0, 0, 0, 0);
         width: auto;
+        overflow-y: initial;
     }
 }
 
@@ -96,8 +105,32 @@ ul.off-canvas-list {
     @media all and (min-width: $bp-med) {
         float: right;
         margin-bottom: 0;
-        margin-right: 8px;
         position: relative;
+
+        ul.dropdown-menu {
+            box-shadow: 0px 2px 6px rgba(0,0,0,.75);
+            border-top: 3px solid $red;
+            list-style: none;
+
+            li {
+
+                a {
+                    margin: 0;
+                    text-align: center;
+                    padding: 8px 12px;
+                    line-height: 24px;
+                    list-style: none;
+                    white-space: nowrap;
+                }
+
+                &.active a,
+                &:hover a {
+                    background-color: $red;
+                    background-image: none;
+                    color: $white;
+                }
+            }
+        }
     }
 
     .active > a,
@@ -114,18 +147,34 @@ ul.off-canvas-list {
             float: left;
 
             a {
-                font-size: 18px;
+                font-size: 15px;
                 color: #333333;
-                padding: 10px 8px;
+                padding: 10px 0 10px 15px;
                 line-height: 10px;
                 margin: 10px 5px 28px;
             }
         }
+
+        @media all and (min-width: $bp-med-2) {
+            a {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .icon-home {
+
+        > a {
+            font-family: $font;
+            line-height: 24px;
+            padding-left: 0;
+
+            @media all and (min-width: $bp-med) {
+                text-indent: -99999px;
+            }
+        }
     }
 }
-
-/* Remove!! */
-.dropdown-menu { display: none;}
 
 .move-right {
     > .inner-wrap {
