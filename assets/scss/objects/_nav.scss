@@ -40,3 +40,15 @@ li.dropdown.active .caret {
 li.dropdown:hover .dropdown-menu {
     display: block;
 }
+
+.nav-main .menu-line {
+  border-left: 35px inset rgba(255, 255, 255, 0);
+  border-right: 35px inset rgba(255, 255, 255, 0);
+  border-bottom: 5px solid #A50715;
+  position: absolute;
+  bottom: 0;
+}
+
+.social-nav {
+    margin: 7px 0;
+}
