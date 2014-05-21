@@ -18,3 +18,12 @@ body {
 img {
     max-width: 100%;
 }
+
+a {
+    color: $red;
+
+    &:hover {
+        color: $red;
+        text-decoration: underline;
+    }
+}

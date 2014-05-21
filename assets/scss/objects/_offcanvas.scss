@@ -89,6 +89,10 @@ ul.off-canvas-list {
         color: rgba(255, 255, 255, 0.7);
         border-bottom: 1px solid #262626;
 
+        &:hover {
+            text-decoration: none;
+        }
+
         @media all and (min-width: $bp-med) {
             font-size: 18px;
             color: #333333;
@@ -168,13 +172,16 @@ ul.off-canvas-list {
         > a {
             font-family: $font;
             line-height: 24px;
-            padding-left: 0;
 
             @media all and (min-width: $bp-med) {
                 text-indent: -99999px;
             }
         }
     }
+}
+
+ul.dropdown-menu li a {
+    background-color: transparent;
 }
 
 .move-right {
