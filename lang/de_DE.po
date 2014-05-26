@@ -1,16 +1,21 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: roots\n"
-"POT-Creation-Date: \n"
+"POT-Creation-Date: 2014-05-21 12:02+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Philipp Meier <phimei@gmx.ch>\n"
 "Language-Team: roots\n"
+"Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.6.5\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=n == 1 ? 0 : 1;\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
 
 #: 404.php:4
 msgid "Sorry, but the page you were trying to view does not exist."
@@ -29,7 +34,7 @@ msgstr "einer fehlerhaft eingegebenen Adresse"
 msgid "an out-of-date link"
 msgstr "einem veralteten Link"
 
-#: base.php:4
+#: base.php:6
 msgid ""
 "You are using an <strong>outdated</strong> browser. Please <a href=\"http://"
 "browsehappy.com/\">upgrade your browser</a> to improve your experience."
@@ -50,76 +55,77 @@ msgstr "&larr; Ältere Artikel"
 msgid "Newer posts &rarr;"
 msgstr "Neuere Artikel &rarr;"
 
-#: lib/activation.php:28 lib/activation.php:29
+#: lib/activation.php:29 lib/activation.php:30
 msgid "Theme Activation"
 msgstr "Theme Aktivierung"
 
-#: lib/activation.php:51
+#: lib/activation.php:52
+#, php-format
 msgid "%s Theme Activation"
 msgstr "%s Theme Aktivierung"
 
-#: lib/activation.php:62 lib/activation.php:64
+#: lib/activation.php:63 lib/activation.php:65
 msgid "Create static front page?"
 msgstr "Statische Startseite anlegen?"
 
-#: lib/activation.php:66 lib/activation.php:79 lib/activation.php:92
-#: lib/activation.php:105 lib/activation.php:118
+#: lib/activation.php:67 lib/activation.php:80 lib/activation.php:93
+#: lib/activation.php:106 lib/activation.php:119
 msgid "Yes"
 msgstr "Ja"
 
-#: lib/activation.php:67 lib/activation.php:80 lib/activation.php:93
-#: lib/activation.php:106 lib/activation.php:119
+#: lib/activation.php:68 lib/activation.php:81 lib/activation.php:94
+#: lib/activation.php:107 lib/activation.php:120
 msgid "No"
 msgstr "Nein"
 
-#: lib/activation.php:70
+#: lib/activation.php:71
 msgid "Create a page called Home and set it to be the static front page"
 msgstr ""
 "Erstelle eine Home genannte Seite und mache sie zur statischen Startseite"
 
-#: lib/activation.php:75
+#: lib/activation.php:76
 msgid "Change permalink structure?"
 msgstr "Permalinkstruktur ändern?"
 
-#: lib/activation.php:77
+#: lib/activation.php:78
 msgid "Update permalink structure?"
 msgstr "Permalinkstruktur aktualisieren?"
 
-#: lib/activation.php:83
+#: lib/activation.php:84
 msgid "Change permalink structure to /&#37;postname&#37;/"
 msgstr "Ändere die Permalinkstruktur zu /&#37;postname&#37;/"
 
-#: lib/activation.php:88
+#: lib/activation.php:89
 msgid "Change uploads folder?"
 msgstr "Ordner für hochgeladene Dateien ändern?"
 
-#: lib/activation.php:90
+#: lib/activation.php:91
 msgid "Update uploads folder?"
 msgstr "Ordner für hochgeladene Dateien aktualisieren?"
 
-#: lib/activation.php:96
+#: lib/activation.php:97
 msgid "Change uploads folder to /media/ instead of /wp-content/uploads/"
 msgstr ""
 "Ändere Ordner für hochgeladene Dateien von /wp-content/uploads/ zu /media/"
 
-#: lib/activation.php:101 lib/activation.php:103
+#: lib/activation.php:102 lib/activation.php:104
 msgid "Create navigation menu?"
 msgstr "Navigationsmenü anlegen?"
 
-#: lib/activation.php:109
+#: lib/activation.php:110
 msgid "Create the Primary Navigation menu and set the location"
 msgstr "Lege das primäre Navigationsmenü an und lege den Ort fest"
 
-#: lib/activation.php:114 lib/activation.php:116
+#: lib/activation.php:115 lib/activation.php:117
 msgid "Add pages to menu?"
 msgstr "Seiten zum Menü hinzufügen?"
 
-#: lib/activation.php:122
+#: lib/activation.php:123
 msgid "Add all current published pages to the Primary Navigation"
 msgstr ""
 "Füge alle derzeit veröffentlichten Seiten zur primären Navigation hinzu"
 
-#: lib/cleanup.php:210
+#: lib/cleanup.php:193
 msgid "Continued"
 msgstr "Weiterlesen"
 
@@ -128,26 +134,31 @@ msgid "Primary Navigation"
 msgstr "Primäre Navigation"
 
 #: lib/titles.php:10
-msgid "Latest Posts"
-msgstr "Neuste Artikel"
+msgid "News"
+msgstr ""
 
 #: lib/titles.php:19
+#, php-format
 msgid "Daily Archives: %s"
 msgstr "Tägliche Archive: %s"
 
 #: lib/titles.php:21
+#, php-format
 msgid "Monthly Archives: %s"
 msgstr "Monatliche Archive: %s"
 
 #: lib/titles.php:23
+#, php-format
 msgid "Yearly Archives: %s"
 msgstr "Jährliche Archive: %s"
 
 #: lib/titles.php:26
+#, php-format
 msgid "Author Archives: %s"
 msgstr "Autorarchive: %s"
 
 #: lib/titles.php:31
+#, php-format
 msgid "Search Results for %s"
 msgstr "Suchergebnisse für %s"
 
@@ -155,27 +166,28 @@ msgstr "Suchergebnisse für %s"
 msgid "Not Found"
 msgstr "Nicht gefunden"
 
-#: lib/widgets.php:8
-msgid "Primary"
-msgstr "Primär"
+#: lib/widgets.php:9
+msgid "Homepage"
+msgstr ""
 
-#: lib/widgets.php:17
-msgid "Footer"
-msgstr "Fußzeile"
+#: lib/widgets.php:18
+msgid "Blog"
+msgstr ""
 
-#: lib/widgets.php:45
+#: lib/widgets.php:46
 msgid "Use this widget to add a vCard"
 msgstr "Benutze dieses Widget um eine vCard hinzuzufügen"
 
-#: lib/widgets.php:47
+#: lib/widgets.php:48
 msgid "Roots: vCard"
 msgstr "Roots: vCard"
 
-#: lib/widgets.php:74
+#: lib/widgets.php:75
 msgid "vCard"
 msgstr "vCard"
 
 #: templates/comment.php:4
+#, php-format
 msgid "%1$s"
 msgstr "%1$s"
 
@@ -188,10 +200,8 @@ msgid "Your comment is awaiting moderation."
 msgstr "Dein Kommentar wartet auf Moderation."
 
 #: templates/comments.php:8
-msgid "One Response to &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s Responses to &ldquo;%2$s&rdquo;"
-msgstr[0] "Eine Reaktion auf &ldquo;%2$s&rdquo;"
-msgstr[1] "%1$s Reaktionen auf &ldquo;%2$s&rdquo;"
+msgid "Comments"
+msgstr "Kommentare"
 
 #: templates/comments.php:18
 msgid "&larr; Older comments"
@@ -210,15 +220,18 @@ msgid "Leave a Reply"
 msgstr "Hinterlasse eine Antwort"
 
 #: templates/comments.php:45
+#, php-format
 msgid "Leave a Reply to %s"
 msgstr "Hinterlasse eine Antwort auf %s"
 
 #: templates/comments.php:48
+#, php-format
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
 msgstr ""
 "Du musst <a href=\"%s\">angemeldet</a> sein, um einen Kommentar zu erstellen."
 
 #: templates/comments.php:53
+#, php-format
 msgid "Logged in as <a href=\"%s/wp-admin/profile.php\">%s</a>."
 msgstr "Angemeldet als <a href=\"%s/wp-admin/profile.php\">%s</a>."
 
@@ -230,42 +243,62 @@ msgstr "Melde dich von diesem Benutzerkonto ab."
 msgid "Log out &raquo;"
 msgstr "Abmelden  &raquo;"
 
-#: templates/comments.php:57
+#: templates/comments.php:58
 msgid "Name"
 msgstr "Name"
 
-#: templates/comments.php:57 templates/comments.php:59
-msgid " (required)"
-msgstr "(benötigt)"
+#: templates/comments.php:58 templates/comments.php:62
+msgid " *"
+msgstr " *"
 
-#: templates/comments.php:59
+#: templates/comments.php:62
 msgid "Email (will not be published)"
 msgstr "E-Mail (wird nicht veröffentlicht)"
 
-#: templates/comments.php:61
+#: templates/comments.php:66
 msgid "Website"
 msgstr "Webseite"
 
-#: templates/comments.php:64
+#: templates/comments.php:71
 msgid "Comment"
 msgstr "Kommentar"
 
-#: templates/comments.php:66
+#: templates/comments.php:74
 msgid "Submit Comment"
 msgstr "Kommentar abschicken"
 
-#: templates/content-single.php:11
+#: templates/content-single.php:15
 msgid "Pages:"
 msgstr "Seiten:"
 
-#: templates/entry-meta.php:2
-msgid "By"
-msgstr "Von"
+#: templates/entry-meta.php:1
+msgid "d. F Y"
+msgstr "d. F Y"
 
-#: templates/searchform.php:2
+#: templates/searchform.php:3 templates/searchform.php:6
+msgid "Search"
+msgstr "Suche"
+
+#: templates/searchform.php:4
 msgid "Search for:"
 msgstr "Suche nach:"
 
-#: templates/searchform.php:3 templates/searchform.php:4
-msgid "Search"
-msgstr "Suche"
+#~ msgid "Latest Posts"
+#~ msgstr "Neuste Artikel"
+
+#~ msgid "Primary"
+#~ msgstr "Primär"
+
+#~ msgid "Footer"
+#~ msgstr "Fußzeile"
+
+#~ msgid "One Response to &ldquo;%2$s&rdquo;"
+#~ msgid_plural "%1$s Responses to &ldquo;%2$s&rdquo;"
+#~ msgstr[0] "Eine Reaktion auf &ldquo;%2$s&rdquo;"
+#~ msgstr[1] "%1$s Reaktionen auf &ldquo;%2$s&rdquo;"
+
+#~ msgid " (required)"
+#~ msgstr "(benötigt)"
+
+#~ msgid "By"
+#~ msgstr "Von"
