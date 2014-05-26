@@ -1,19 +1,21 @@
-.responsive-slider.flexslider {
+.slider {
+    width: 100%;
+    height: auto;
+
     .flex-control-nav {
         display: none;
     }
 
-    .slide-title {
+    h2.slide-title {
+        top: 70%;
         a {
-            top: initial;
-            left: 0;
-            bottom: 2em;
-            right: initial;
             border-left: 3px solid $red;
             font-size: $font-size-large;
             background: rgba(0,0,0,.5);
             font-family: $font-secondary;
             font-weight: normal;
+            color: $white;
+            padding: .5em 1em;
 
             @media all and (max-width: $bp-med) {
                 position: initial;
