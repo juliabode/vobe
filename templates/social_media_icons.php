@@ -12,5 +12,5 @@
               }
         ?>
     </ul>
-    <?php echo qtrans_generateLanguageSelectCode(); ?>
+    <?php if ( function_exists(qtrans_generateLanguageSelectCode) ) echo qtrans_generateLanguageSelectCode(); ?>
 </div>
