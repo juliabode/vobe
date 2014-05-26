@@ -1,4 +1,4 @@
-<div class="animation-wrapper">
+<div class="animation-wrapper hide-small">
     <div class="red-block"></div>
     <div class="tlt">
         <ul class="texts">

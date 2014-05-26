@@ -12,4 +12,5 @@
               }
         ?>
     </ul>
+    <?php echo qtrans_generateLanguageSelectCode(); ?>
 </div>

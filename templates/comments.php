@@ -4,8 +4,8 @@
   }
 
  if (have_comments()) : ?>
-  <section id="comments">
-    <h3><?php printf(_n('One Response to &ldquo;%2$s&rdquo;', '%1$s Responses to &ldquo;%2$s&rdquo;', get_comments_number(), 'roots'), number_format_i18n(get_comments_number()), get_the_title()); ?></h3>
+  <section id="comments" class="comments">
+    <h3 class="comments__header"><?php _e('Comments', 'roots'); ?></h3>
 
     <ol class="media-list">
       <?php wp_list_comments(array('walker' => new Roots_Walker_Comment)); ?>
@@ -55,11 +55,11 @@
           </p>
         <?php else : ?>
           <div class="form-group">
-            <label for="author"><?php _e('Name', 'roots'); if ($req) _e(' (required)', 'roots'); ?></label>
+            <label for="author"><?php _e('Name', 'roots'); if ($req) _e(' *', 'roots'); ?></label>
             <input type="text" class="form-control" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" size="22" <?php if ($req) echo 'aria-required="true"'; ?>>
           </div>
           <div class="form-group">
-            <label for="email"><?php _e('Email (will not be published)', 'roots'); if ($req) _e(' (required)', 'roots'); ?></label>
+            <label for="email"><?php _e('Email (will not be published)', 'roots'); if ($req) _e(' *', 'roots'); ?></label>
             <input type="email" class="form-control" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" size="22" <?php if ($req) echo 'aria-required="true"'; ?>>
           </div>
           <div class="form-group">
@@ -71,7 +71,7 @@
           <label for="comment"><?php _e('Comment', 'roots'); ?></label>
           <textarea name="comment" id="comment" class="form-control" rows="5" aria-required="true"></textarea>
         </div>
-        <p><input name="submit" class="btn btn-primary" type="submit" id="submit" value="<?php _e('Submit Comment', 'roots'); ?>"></p>
+        <p><input name="submit" class="btn btn-primary right" type="submit" id="submit" value="<?php _e('Submit Comment', 'roots'); ?>"></p>
         <?php comment_id_fields(); ?>
         <?php do_action('comment_form', $post->ID); ?>
       </form>

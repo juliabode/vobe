@@ -1,6 +1,15 @@
-<div class="large-12 medium-12 small-12 column">
+<?php
+/*
+Template Name: Blog
+*/
+?>
 
-        <div class="row">
+
+<div class="large-12 medium-12 small-12 column">
+    <?php get_template_part('templates/page', 'header'); ?>
+    <?php query_posts( 'post_type=post&orderby=date' ); ?>
+
+    <div class="row">
         <div class="small-9 medium-9 small-12 left">
             <?php
                 get_template_part('templates/content', 'single');
@@ -12,3 +21,5 @@
         </aside><!-- /.sidebar -->
     </div>
 </div>
+
+<?php wp_reset_query(); ?>
