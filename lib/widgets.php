@@ -10,8 +10,8 @@ function roots_widgets_init() {
     'id'            => 'sidebar-homepage',
     'before_widget' => '<section class="widget %1$s %2$s"><div class="widget-inner">',
     'after_widget'  => '</div></section>',
-    'before_title'  => '<h3>',
-    'after_title'   => '</h3>',
+    'before_title'  => '<h4>',
+    'after_title'   => '</h4>',
   ));
 
   register_sidebar(array(
@@ -19,8 +19,8 @@ function roots_widgets_init() {
     'id'            => 'sidebar-blog',
     'before_widget' => '<section class="widget %1$s %2$s"><div class="widget-inner">',
     'after_widget'  => '</div></section>',
-    'before_title'  => '<h3>',
-    'after_title'   => '</h3>',
+    'before_title'  => '<h4>',
+    'after_title'   => '</h4>',
   ));
 
   // Widgets
