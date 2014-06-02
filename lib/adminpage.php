@@ -16,6 +16,7 @@ function merge_option_default_variables() {
     'vobe_flickr_link'            => '',
     'vobe_rss_link'               => '',
     'vobe_imprint_link'           => '',
+    'vobe_google_map_code'        => '',
   );
 
   return wp_parse_args( $options, $defaults );
@@ -94,8 +95,9 @@ function register_and_build_fields() {
   add_settings_field('vobe_flickr_link', 'Flickr:', 'vobe_flickr_link', __FILE__, 'social_media_section');
   add_settings_field('vobe_rss_link', 'RSS:', 'vobe_rss_link', __FILE__, 'social_media_section');
 
-  add_settings_section('main_section', 'Einstellungen für den Footer', 'section_cb', __FILE__);
+  add_settings_section('main_section', 'Sonstige Einstellungen', 'section_cb', __FILE__);
   add_settings_field('vobe_imprint_link', 'Link zum Impressum:', 'imprint_link_setting', __FILE__, 'main_section');
+  add_settings_field('vobe_google_map_code', 'Embed Code Google Maps:', 'vobe_google_map_code', __FILE__, 'main_section');
 }
 add_action('admin_init', 'register_and_build_fields');
 
@@ -106,6 +108,11 @@ function section_cb() {}
 function imprint_link_setting() {
   $options = merge_option_default_variables();
   echo "<input name='plugin_options[vobe_imprint_link]' type='text' value='{$options['vobe_imprint_link']}' class='regular-text'/>";
+}
+
+function vobe_google_map_code() {
+  $options = merge_option_default_variables();
+  echo "<textarea name='plugin_options[vobe_google_map_code]' rows='5' class='large-text code'>{$options['vobe_google_map_code']}</textarea>";
 }
 
 function vobe_facebook_link() {
