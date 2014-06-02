@@ -3,12 +3,15 @@
     margin-top: $space-quarter;
     background-color: $gray-light;
     border: 1px solid $gray-light;
-    color: $gray;
     overflow: hidden;
-    padding: 0 12px;
+    padding: 12px;
 
     p, a {
-        margin: 12px 0;
         font-size: 12px;
+        color: $gray;
+    }
+
+    a.imprint {
+        float: right;
     }
 }
