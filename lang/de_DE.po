@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: roots\n"
-"POT-Creation-Date: 2014-05-21 12:02+0100\n"
+"POT-Creation-Date: 2014-06-02 16:29+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Philipp Meier <phimei@gmx.ch>\n"
 "Language-Team: roots\n"
@@ -186,16 +186,11 @@ msgstr "Roots: vCard"
 msgid "vCard"
 msgstr "vCard"
 
-#: templates/comment.php:4
-#, php-format
-msgid "%1$s"
-msgstr "%1$s"
-
-#: templates/comment.php:5
+#: templates/comment.php:13
 msgid "(Edit)"
 msgstr "(Bearbeiten)"
 
-#: templates/comment.php:9
+#: templates/comment.php:17
 msgid "Your comment is awaiting moderation."
 msgstr "Dein Kommentar wartet auf Moderation."
 
@@ -271,9 +266,9 @@ msgstr "Kommentar abschicken"
 msgid "Pages:"
 msgstr "Seiten:"
 
-#: templates/entry-meta.php:1
-msgid "d. F Y"
-msgstr "d. F Y"
+#: templates/footer.php:10
+msgid "Imprint"
+msgstr "Impressum"
 
 #: templates/searchform.php:3 templates/searchform.php:6
 msgid "Search"
@@ -282,6 +277,12 @@ msgstr "Suche"
 #: templates/searchform.php:4
 msgid "Search for:"
 msgstr "Suche nach:"
+
+#~ msgid "%1$s"
+#~ msgstr "%1$s"
+
+#~ msgid "d. F Y"
+#~ msgstr "d. F Y"
 
 #~ msgid "Latest Posts"
 #~ msgstr "Neuste Artikel"

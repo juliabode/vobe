@@ -15,7 +15,7 @@ function merge_option_default_variables() {
     'vobe_vimeo_link'             => '',
     'vobe_flickr_link'            => '',
     'vobe_rss_link'               => '',
-    'imprint_link_setting'        => '',
+    'vobe_imprint_link'           => '',
   );
 
   return wp_parse_args( $options, $defaults );
@@ -95,7 +95,7 @@ function register_and_build_fields() {
   add_settings_field('vobe_rss_link', 'RSS:', 'vobe_rss_link', __FILE__, 'social_media_section');
 
   add_settings_section('main_section', 'Einstellungen für den Footer', 'section_cb', __FILE__);
-  add_settings_field('imprint_link', 'Link zum Impressum:', 'imprint_link_setting', __FILE__, 'main_section');
+  add_settings_field('vobe_imprint_link', 'Link zum Impressum:', 'imprint_link_setting', __FILE__, 'main_section');
 }
 add_action('admin_init', 'register_and_build_fields');
 
