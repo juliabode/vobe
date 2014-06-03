@@ -21,7 +21,8 @@
 
     } else if ( $page_google_map ) {
 
-        $slider_or_image = get_option('plugin_options')['vobe_google_map_code'];
+        $options = $get_option('plugin_options');
+        $slider_or_image = $options['vobe_google_map_code'];
 
     }
 
