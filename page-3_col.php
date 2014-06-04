@@ -4,7 +4,7 @@ Template Name: 3 Spalten
 */
 ?>
 
-<div class="large-12 medium-12 small-12 column m-t-xxl m-b-xxl">
+<div class="large-12 medium-12 small-12 column">
   <?php get_template_part('templates/page', 'header'); ?>
 
   <ul class="large-block-grid-3 medium-block-grid-3 small-block-grid-1">

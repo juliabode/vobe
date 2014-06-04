@@ -4,7 +4,7 @@ Template Name: 2 Spalten
 */
 ?>
 
-<div class="large-12 medium-12 small-12 column m-t-xxl m-b-xxl">
+<div class="large-12 medium-12 small-12 column">
     <?php get_template_part('templates/page', 'header'); ?>
 
     <ul class="large-block-grid-2 medium-block-grid-2 small-block-grid-1">

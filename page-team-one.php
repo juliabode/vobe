@@ -4,7 +4,7 @@ Template Name: Team Page One
 */
 ?>
 
-<div class="large-12 medium-12 small-12 column m-t-xxl m-b-xxl">
+<div class="large-12 medium-12 small-12 column">
     <?php get_template_part('templates/page', 'header'); ?>
 
     <div class="m-b-xxxl">
