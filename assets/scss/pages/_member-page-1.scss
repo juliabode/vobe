@@ -1,9 +1,37 @@
-.member-page-1__left {
-    margin-left: -40px;
+.member-page-1__left .alignleft,
+.member-page-1__right .alignright {
+    text-align: center;
 }
 
-.member-page-1__right {
-    margin-right: -40px;
+@media all and (min-width: $bp-large) {
+    .member-page-1__left {
+        margin-left: -40px;
+
+        .alignleft {
+            text-align: left;
+        }
+    }
+
+    .member-page-1__right {
+        margin-right: -40px;
+
+        .alignright {
+            text-align: right;
+        }
+
+        &.large-block-grid-2 {
+            > li:nth-child(2n+1) {
+                padding-left: .9375em;
+                padding-right: 0;
+                float: right;
+            }
+
+            > li:nth-child(2n) {
+                padding-left: 0;
+                padding-right: .9375em;
+            }
+        }
+    }
 }
 
 .member-page__image-container {

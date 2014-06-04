@@ -44,14 +44,6 @@ Template Name: Team Page One
             <?php } else { ?>
 
                     <ul class="large-block-grid-2 medium-block-grid-2 small-block-grid-1 member-page-1__right">
-                        <li class="member-page-1__infos">
-                            <h3><?php echo $memberName; ?></h3>
-                            <p class="cursive"><?php echo $memberPosition; ?></p>
-                            <div>
-                                <?php echo $memberDescription; ?>
-                            </div>
-                        </li>
-
                         <li class="alignright">
                             <?php
                             if ( !is_null($memberImage['sizes']['member-fotos']) ) : ?>
@@ -59,6 +51,14 @@ Template Name: Team Page One
                                     <img class="right" src="<?php echo $memberImage['sizes']['member-fotos']; ?>" alt="<?php echo $memberImage; ?>">
                                 </div>
                             <?php endif ?>
+                        </li>
+
+                        <li class="member-page-1__infos">
+                            <h3><?php echo $memberName; ?></h3>
+                            <p class="cursive"><?php echo $memberPosition; ?></p>
+                            <div>
+                                <?php echo $memberDescription; ?>
+                            </div>
                         </li>
                     </ul>
 
