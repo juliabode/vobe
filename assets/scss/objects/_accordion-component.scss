@@ -3,6 +3,7 @@
         height: 50px;
         border-top: 1px solid $gray-light;
         overflow: hidden;
+        list-style: none;
 
         &:first-child {
             border-top:none;
