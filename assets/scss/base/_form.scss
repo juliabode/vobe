@@ -7,9 +7,16 @@ textarea {
 
 input[type="text"],
 input[type="email"],
-input[type="url"],
+input[type="url"] {
+    width: 100%;
+
+    @media all and (min-width: $bp-med) {
+        width: 50%;
+    }
+}
+
 textarea {
-    width: 100%
+    width: 100%;
 }
 
 input[type="submit"] {
