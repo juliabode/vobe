@@ -9,7 +9,11 @@
     $page_parent_animation = function_exists('get_field') ? get_field('show_vobe_animation', $wp_query->post->post_parent) : '';
     $page_google_map       = function_exists('get_field') ? get_field('show_google_map', $wp_query->post->post_parent) : '';
     
-    if ( $page_parent_image ) {
+    if ( $page_image ) {
+
+        $slider_or_image =  wp_get_attachment_image( $page_image, 'full' );
+
+    } else if ( $page_parent_image ) {
 
         $slider_or_image =  wp_get_attachment_image( $page_parent_image, 'full' );
 
@@ -29,10 +33,6 @@
     } else if ( is_single() ) {
 
         $slider_or_image =  wp_get_attachment_image( $post_parent_image, 'full' );
-
-    } else {
-
-        $slider_or_image =  wp_get_attachment_image( $page_image, 'full' );
 
     }
 
