@@ -20,11 +20,10 @@ textarea {
 }
 
 input[type="submit"] {
-    @include linear-gradient($white, $gray-light, $fallback:$gray-light);
     @include transition(all, 50ms, ease-in-out);
     text-transform: uppercase;
-    border-radius: 3px;
     padding: 10px 30px;
+    @extend .special-box;
 
     &:hover {
         cursor: pointer;
