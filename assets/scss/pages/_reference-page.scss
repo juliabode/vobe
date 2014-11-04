@@ -1,4 +1,32 @@
 .reference-list ul {
-    list-style: inside circle;
+    list-style: none;
     line-height: 32px;
+
+    li {
+        margin-bottom: 1px;
+        padding-left: 10px;
+        @include transition(all, 150ms, linear);
+
+        &:nth-child(2n+1) {
+            background: $gray-red;
+        }
+
+        &:nth-child(2n) {
+            background: $gray-lighter;
+        }
+
+        &:hover {
+            background: $red;
+            color: $white;
+        }
+    }
+
+    .fa {
+        color: $red;
+        line-height: 32px;
+    }
+
+    .fa-li {
+        top: 0;
+    }
 }
