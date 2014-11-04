@@ -1,13 +1,14 @@
 article.post {
     margin: 30px 0;
     border-bottom: 1px solid $red;
+    padding-bottom: 40px;
 
     &:last-child {
         border: none;
     }
 
     h2 a {
-        color: $gray-dark;
+        color: $red;
     }
 }
 
