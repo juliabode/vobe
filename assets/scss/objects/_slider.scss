@@ -17,6 +17,11 @@
             color: $white;
             padding: .5em 1em;
 
+            &:hover {
+                text-decoration: none;
+                cursor: default;
+            }
+
             @media all and (max-width: $bp-med) {
                 position: initial;
                 background: none;
