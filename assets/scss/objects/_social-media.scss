@@ -3,11 +3,17 @@
     overflow: hidden;
 }
 
-.social-media-links {
+.social-nav {
     display: none;
 
     @media all and (min-width: $bp-med) {
         display: block;
+    }
+}
+
+.social-media-links {
+
+    @media all and (min-width: $bp-med) {
         text-align: center;
         list-style: none;
         padding: 10px 0 5px;

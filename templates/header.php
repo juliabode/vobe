@@ -1,5 +1,8 @@
-<div class="bg--red">
+<div class="bg--red mobile-header">
     <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+    <div class="choose-lang">
+        <?php if ( function_exists(qtrans_generateLanguageSelectCode) ) echo qtrans_generateLanguageSelectCode(); ?>
+    </div>
 </div>
 
 <header class="banner row" role="banner">
@@ -10,7 +13,10 @@
     <div class="small-12 medium-8 large-7 columns pos--init">
 
         <nav class="social-nav">
-            <?php get_template_part('templates/social_media_icons'); ?>
+            <div class="social-media-wrapper">
+                <?php get_template_part('templates/social_media_icons'); ?>
+                <?php if ( function_exists(qtrans_generateLanguageSelectCode) ) echo qtrans_generateLanguageSelectCode(); ?>
+            </div>
         </nav>
         <nav class="nav-main left-off-canvas-menu" role="navigation">
             <?php

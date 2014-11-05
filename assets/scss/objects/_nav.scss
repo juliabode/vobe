@@ -62,3 +62,25 @@ li.dropdown:hover .dropdown-menu {
     margin: 7px 0;
     min-height: 35px;
 }
+
+.mobile-header {
+    display: block;
+
+    a.menu-icon,
+    .choose-lang {
+        display: inline-block;
+    }
+
+    .choose-lang {
+        float: right;
+        padding-right: 10px;
+
+        a {
+            color: $white;
+        }
+    }
+
+    @media all and (min-width: $bp-med) {
+        display: none;
+    }
+}
