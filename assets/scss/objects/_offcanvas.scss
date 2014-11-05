@@ -66,6 +66,72 @@
         width: auto;
         overflow-y: initial;
     }
+
+    .social-media-links {
+        display: block;
+        margin-top: 8px;
+
+        a {
+            display: block;
+            padding: 0.66667rem;
+            color: $white;
+            text-transform: uppercase;
+            margin: 0;
+            max-height: 45px;
+
+            &:hover {
+                text-decoration: none;
+            }
+
+            &.fa-facebook {
+                background-color: #3B5998;
+            }
+
+            &.fa-twitter {
+                background-color: #00aced;
+            }
+
+            &.fa-google {
+                background-color: #dd4b39;
+            }
+
+            &.fa-mail {
+                background-color: #f7b42c;
+            }
+
+            &.fa-linkedin {
+                background-color: #517fa4;
+            }
+
+            &.fa-xing {
+                background-color: #006563;
+            }
+
+            &.fa-skype {
+                background-color: #00aff0;
+            }
+
+            &.fa-youtube {
+                background-color: #ff3333;
+            }
+
+            &.fa-vimeo {
+                background-color: #aad450;
+            }
+
+            &.fa-flickr {
+                background-color: #ff0084;
+            }
+
+            &.fa-rss {
+                background-color: #ff6600;
+            }
+        }
+
+        @media all and (min-width: $bp-med) {
+            display: none;
+        }
+    }
 }
 
 ul.off-canvas-list {

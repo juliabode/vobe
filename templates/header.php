@@ -26,6 +26,7 @@
                                         'items_wrap'        => '<ul id="%1$s" class="%2$s"><li class="hide-large hide-med"><a class="icon-close exit-off-canvas"></a></li>%3$s</ul>'));
                 endif;
             ?>
+            <?php get_template_part('templates/social_media_icons-offcanvas'); ?>
         </nav>
     </div>
 </header>

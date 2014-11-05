@@ -11,7 +11,7 @@
     }
 }
 
-.social-media-links {
+.social-nav .social-media-links {
 
     @media all and (min-width: $bp-med) {
         text-align: center;
@@ -128,7 +128,7 @@
     }
 }
 
-.social-media-links li:hover a {
+.social-nav .social-media-links li:hover a {
     margin-top: -20px;
     text-decoration: none;
 }
