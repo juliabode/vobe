@@ -19,11 +19,17 @@ textarea {
     width: 100%;
 }
 
-input[type="submit"] {
+input[type="submit"],
+button {
     @include transition(all, 50ms, ease-in-out);
     text-transform: uppercase;
     padding: 10px 30px;
     @extend .special-box;
+
+    &::before,
+    &::after {
+        content: none;
+    }
 
     &:hover {
         cursor: pointer;
@@ -37,4 +43,8 @@ input[type="submit"] {
 
 .form-group {
     margin-bottom: 11px;
+}
+
+.search-form {
+    margin-top: 20px;
 }
