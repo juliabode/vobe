@@ -8,11 +8,10 @@
     h3 {
         margin: 0;
         padding: 10px 20px;
-        color: $gray-dark;
         position: relative;
         text-transform: uppercase;
-        border-top: 1px solid $gray-light;
-        border-bottom: 3px double $gray-light;
+        border-top: 1px solid $red;
+        border-bottom: 3px double $red;
         @include font-size(1.8, 1.8);
 
         &:before {
@@ -29,16 +28,6 @@
     }
 
     img {
-        padding: 3px;
-        margin-right: 8px;
-        background-color: $white;
-        border: 1px solid $gray-light;
-        margin-bottom: 4px;
-        box-shadow: inset 1px 0 0 rgba(255,255,255,0.4),
-                    inset 0 1px 0 rgba(255,255,255,0.4),
-                    inset -1px 0 0 rgba(255,255,255,0.4),
-                    inset 0 -1px 0 rgba(255,255,255,0.4);
-        margin: 10px;
     }
 
     p {
