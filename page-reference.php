@@ -13,7 +13,14 @@ Template Name: Referenzen
         <?php if( have_rows('reference_list') ) { ?>
         <ul>
             <?php while ( have_rows('reference_list') ) { the_row(); ?>
-                <li><?php the_sub_field('reference'); ?>
+                <li>
+                    <div class="small-7">
+                        <?php the_sub_field('reference'); ?>
+                    </div>
+                    <div class="small-4 aligncenter">
+                        <?php $sub = get_sub_field('logos'); ?>
+                        <img src="<?php echo $sub['url']; ?>">
+                    </div>
                 </li>
             <?php } ?>
         </ul>
