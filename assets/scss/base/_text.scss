@@ -1,3 +1,22 @@
-.content p {
-    margin: $space 0;
+.content {
+    p {
+        margin: $space 0;
+    }
+
+    ul {
+        padding-left: 0;
+        margin-left: 1em;
+        list-style-type: none;
+
+        li {
+            position: relative;
+
+            &:before {
+                content: "\f0da";
+                font-family: FontAwesome;
+                padding-right: 8px;
+                color: $red;
+            }
+        }
+    }
 }
