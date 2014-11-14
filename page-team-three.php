@@ -22,7 +22,7 @@ Template Name: Team Page Three
 
                 if ( $i % 2 !== 0 ) { ?>
 
-                    <ul class="large-block-grid-2 medium-block-grid-2 small-block-grid-1">
+                    <ul class="large-block-grid-2 medium-block-grid-2 small-block-grid-1 alternative-list">
                         <li class="alignleft">
                             <?php
                             if ( !is_null($memberImage['sizes']['member-fotos']) ) : ?>
@@ -43,7 +43,7 @@ Template Name: Team Page Three
 
             <?php } else { ?>
 
-                    <ul class="large-block-grid-2 medium-block-grid-2 small-block-grid-1">
+                    <ul class="large-block-grid-2 medium-block-grid-2 small-block-grid-1 alternative-list">
                         <li class="member-page-3__infos">
                             <h3><?php echo $memberName; ?></h3>
                             <p class="cursive"><?php echo $memberPosition; ?></p>

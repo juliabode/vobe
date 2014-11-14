@@ -11,7 +11,7 @@ Template Name: Referenzen
     <div class="reference-list">
 
         <?php if( have_rows('reference_list') ) { ?>
-        <ul>
+        <ul class="alternative-list">
             <?php while ( have_rows('reference_list') ) { the_row(); ?>
                 <li>
                     <div class="small-7">

@@ -11,7 +11,7 @@ Template Name: Team Page Two
         <?php get_template_part('templates/content', 'page'); ?>
     </div>
 
-    <ul class="large-block-grid-2 medium-block-grid-2 small-block-grid-1">
+    <ul class="large-block-grid-2 medium-block-grid-2 small-block-grid-1 alternative-list">
     <?php
         for ( $i = 1; $i <= 6; $i++ ) {
             $memberName        = get_field('member_' . $i . '_name');

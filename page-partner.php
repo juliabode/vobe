@@ -10,7 +10,7 @@ Template Name: Partner
 
     <div class="partner-logos">
         <?php if( have_rows('partner_logos') ) { ?>
-        <ul class="large-block-grid-3 medium-block-grid-3 small-block-grid-2">
+        <ul class="large-block-grid-3 medium-block-grid-3 small-block-grid-2 alternative-list">
             <?php while ( have_rows('partner_logos') ) { the_row(); ?>
                 <li>
                     <?php $sub = get_sub_field('logo_image'); ?>

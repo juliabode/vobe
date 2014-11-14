@@ -22,7 +22,7 @@ Template Name: Team Page One
 
                 if ( $i % 2 !== 0 ) { ?>
 
-                    <ul class="large-block-grid-2 medium-block-grid-2 small-block-grid-1 member-page-1__left">
+                    <ul class="large-block-grid-2 medium-block-grid-2 small-block-grid-1 member-page-1__left alternative-list">
                         <li class="alignleft">
                             <?php
                             if ( !is_null($memberImage['sizes']['member-fotos']) ) : ?>
@@ -43,7 +43,7 @@ Template Name: Team Page One
 
             <?php } else { ?>
 
-                    <ul class="large-block-grid-2 medium-block-grid-2 small-block-grid-1 member-page-1__right">
+                    <ul class="large-block-grid-2 medium-block-grid-2 small-block-grid-1 member-page-1__right alternative-list">
                         <li class="alignright">
                             <?php
                             if ( !is_null($memberImage['sizes']['member-fotos']) ) : ?>
