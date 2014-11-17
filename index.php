@@ -1,21 +1,30 @@
-<?php get_template_part('templates/page', 'header'); ?>
+<div class="large-12 medium-12 small-12 column">
+    <?php get_template_part('templates/page', 'header');
+          $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
-<?php if (!have_posts()) : ?>
-  <div class="alert alert-warning">
-    <?php _e('Sorry, no results were found.', 'roots'); ?>
-  </div>
-  <?php get_search_form(); ?>
-<?php endif; ?>
+          query_posts( 'post_type=post&orderby=date&posts_per_page=10&paged=' . $paged ); ?>
 
-<?php while (have_posts()) : the_post(); ?>
-  <?php get_template_part('templates/content', get_post_format()); ?>
-<?php endwhile; ?>
+    <div class="row">
+        <div class="small-9 medium-9 small-12 left">
 
-<?php if ($wp_query->max_num_pages > 1) : ?>
-  <nav class="post-nav">
-    <ul class="pager">
-      <li class="previous"><?php next_posts_link(__('&larr; Older posts', 'roots')); ?></li>
-      <li class="next"><?php previous_posts_link(__('Newer posts &rarr;', 'roots')); ?></li>
-    </ul>
-  </nav>
-<?php endif; ?>
+            <?php if (!have_posts()) : ?>
+              <div class="alert alert-warning">
+                <?php _e('Sorry, no results were found.', 'roots'); ?>
+              </div>
+              <?php get_search_form(); ?>
+            <?php endif; ?>
+
+            <?php
+                get_template_part('templates/content', 'single');
+            ?>
+            <div class="nav-previous left"><?php next_posts_link( 'Older posts' ); ?></div>
+            <div class="nav-next right"><?php previous_posts_link( 'Newer posts' ); ?></div>
+        </div>
+
+        <aside class="sidebar column small-3 medium-3 small-12 special-box" role="complementary">
+            <?php dynamic_sidebar('sidebar-blog'); ?>
+        </aside><!-- /.sidebar -->
+    </div>
+</div>
+
+<?php wp_reset_query(); ?>
