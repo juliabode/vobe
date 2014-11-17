@@ -8,6 +8,9 @@
             </h2>
             <?php get_template_part('templates/entry-meta'); ?>
         </header>
+        <p>
+            <?php the_post_thumbnail('full'); ?>
+        </p>
         <div class="entry-content">
             <?php the_content(); ?>
         </div>
