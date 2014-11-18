@@ -52,6 +52,12 @@
         time {
             display: none;
         }
+
+    }
+
+    .popular-posts .wpp-post-title {
+        max-width: initial;
+        float: none;
     }
 
     @media all and (min-width: $bp-med) {
