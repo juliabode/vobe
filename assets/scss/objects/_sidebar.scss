@@ -15,7 +15,9 @@
         margin-bottom: 30px;
     }
 
-    .widget_recent_entries, .recent-posts-extended {
+    .widget_recent_entries,
+    .recent-posts-extended,
+    .popular-posts {
 
         li {
             border-bottom: 1px solid $gray-light;
