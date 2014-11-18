@@ -9,7 +9,7 @@ Template Name: Blog
     <?php get_template_part('templates/page', 'header');
           $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
-          query_posts( 'post_type=post&orderby=date&posts_per_page=10&paged=' . $paged ); ?>
+          query_posts( 'post_type=post&orderby=date&posts_per_page=8&paged=' . $paged ); ?>
 
     <div class="row">
         <div class="small-9 medium-9 small-12 left">
