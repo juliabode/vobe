@@ -1,8 +1,5 @@
 <div class="large-12 medium-12 small-12 column">
-    <?php get_template_part('templates/page', 'header');
-          $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-
-          query_posts( 'post_type=post&orderby=date&posts_per_page=8&paged=' . $paged ); ?>
+    <?php get_template_part('templates/page', 'header'); ?>
 
     <div class="row">
         <div class="small-9 medium-9 small-12 left">
